@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Тест по программированию</title>
+        <link rel="stylesheet" href="css/kosher-reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="js/tmpl.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+        <script type="text/html" id="test">
+            <h1><%= header %></h1>
+            <form action="#">
+                <% for(var i = 0; i < questions.length; i++) { %>
+                <div>
+                    <p><%= (i+1) + '. ' + questions[i].title %></p>
+                    <% for (var j = 0; j < questions[i].answers.length; j++) { %>
+                    <div>
+                        <input type="radio" name="<%= questions[i].radioname %>" id="<%= questions[i].id[j] %>" />
+                        <label for="<%= questions[i].id[j] %>"><%= questions[i].answers[j] %></label>
+                    </div>
+                    <% }; %>
+                </div>
+                <% }; %>
+                <button><%= submit %></button>
+            </form>
+        </script>
+    </div>
+    </body>
+</html>

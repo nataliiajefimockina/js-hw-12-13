@@ -1,0 +1,81 @@
+.container {
+    width: 47vw;
+    height: 510px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    font-weight: normal;
+}
+
+h1 {
+    margin: 22px 0 48px;
+    text-align: center;
+}
+
+label {
+    margin-left: 3px;
+    font-size: 16px;
+}
+
+[type="radio"] {
+    margin: 0 15px 7px 0;
+}
+
+button {
+    display: inline-block;
+    width: 329px;
+    height: 55px;
+    margin: 48px 0 0 135px;
+    border: 1px solid #000205;
+    background: #cfe2f3;
+    font-size: 19px;
+    letter-spacing: -.8px;
+    box-sizing: border-box;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 243px;
+    margin: -150px 0 0 -250px;
+    padding: 20px;
+    border: 1px solid #bbb;
+    background: #fff;
+}
+
+.modal button {
+    position: absolute;
+    bottom: 15px;
+    left: 105px;
+    margin: 0;
+    border: 1px solid #000205;
+    background: #cfe2f3;
+    color: #000;
+    font-size: 16px;
+}
+
+.modal p {
+    margin: 10px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.correct {
+    background-color: #9be6a5;
+}
+
+.incorrect {
+    background-color: #f4cece;
+}
+
+h4 {
+    padding: 10px;
+    text-align: center;
+}
+
+.result {
+    margin-top: 10px;
+    font-weight: normal;
+}
