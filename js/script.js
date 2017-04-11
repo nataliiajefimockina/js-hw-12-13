@@ -61,9 +61,9 @@ $(function() {
         $('body').append($modal);
 
         $('button').one('click', function (e) {
+            e.preventDefault();
             $modal.detach();
             $('input').attr('checked', false);
-            $('form').trigger('reset');
         })
     }
 
